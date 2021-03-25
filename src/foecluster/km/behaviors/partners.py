@@ -20,12 +20,15 @@ class IPartners(model.Schema):
     """
     """
 
-    project = schema.TextLine(
-        title=_(u'Project'),
-        description=_(u'Give in a project name'),
-        required=False,
-    )
-
+    directives.widget(nationalities=SelectFieldWidget)
+    partners = schema.List(
+            title=u'Partners',
+            description=u'Partner(s) contributing to this resource',
+            required=False,
+            value_type=schema.Choice(
+                vocabulary='foecluster.partners',
+                ),
+            )
 
 @implementer(IPartners)
 @adapter(IPartnersMarker)
@@ -34,11 +37,11 @@ class Partners(object):
         self.context = context
 
     @property
-    def project(self):
-        if safe_hasattr(self.context, 'project'):
-            return self.context.project
+    def partners(self):
+        if safe_hasattr(self.context, 'partners'):
+            return self.context.partners
         return None
 
-    @project.setter
-    def project(self, value):
-        self.context.project = value
+    @partners.setter
+    def partners(self, value):
+        self.context.partners = value
