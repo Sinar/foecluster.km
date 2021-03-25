@@ -24,8 +24,21 @@ class Partners(object):
         # Just an example list of content for our vocabulary,
         # this can be any static or dynamic data, a catalog result for example.
         items = [
-            VocabItem(u'sony-a7r-iii', _(u'Sony Aplha 7R III')),
-            VocabItem(u'canon-5d-iv', _(u'Canon 5D IV')),
+            VocabItem(u'ai', _(u'Amnesty International Malaysia')),
+            VocabItem(u'article19', _(u'Article 19')),
+            VocabItem(u'c4', _(u''' Centre to Combat Corruption and
+            Cronyism(C4)''')),
+            VocabItem(u'cij', _(u'Centre for Independent Journalism')),
+            VocabItem(u'fff', _(u'Freedom Film Network')),
+            VocabItem(u'justice_sisters', _(u'Justice for Sisters')),
+            VocabItem(u'kryss', _(u'KRYSS Network')),
+            VocabItem(u'mcchr', _(u'''
+            Malaysian Centre for Constitutionalism and Human Rights
+            (MCCHR)''')),
+            VocabItem(u'geramm', _(u'Gerakan Media Merdeka')),
+            VocabItem(u'sinarproject', _(u'Sinar Project')),
+            VocabItem(u'sis', _(u'Sisters in Islam)')),
+            VocabItem(u'suaram', _(u'Suara Rakyat Malaysia (SUARAM)')),
         ]
 
         # Fix context if you are using the vocabulary in DataGridField.

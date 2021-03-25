@@ -7,7 +7,8 @@ from plone.supermodel import model
 from Products.CMFPlone.utils import safe_hasattr
 from zope.component import adapter
 from zope.interface import implementer, Interface, provider
-
+from plone.autoform import directives
+from plone.app.z3cform.widget import SelectFieldWidget
 
 class IPartnersMarker(Interface):
     pass
@@ -18,7 +19,7 @@ class IPartners(model.Schema):
     """
     """
 
-    directives.widget(nationalities=SelectFieldWidget)
+    directives.widget(partners=SelectFieldWidget)
     partners = schema.List(
             title=u'Partners',
             description=u'Partner(s) contributing to this resource',

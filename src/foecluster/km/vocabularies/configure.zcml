@@ -6,7 +6,7 @@
 
     <utility
         component=".partners.PartnersFactory"
-        name="foecluster.km.Partners"
+        name="foecluster.partners"
     />
 
 
