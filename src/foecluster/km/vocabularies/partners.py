@@ -28,8 +28,9 @@ class Partners(object):
             VocabItem(u'article19', _(u'Article 19')),
             VocabItem(u'c4', _(u''' Centre to Combat Corruption and
             Cronyism(C4)''')),
-            VocabItem(u'cij', _(u'Centre for Independent Journalism')),
-            VocabItem(u'fff', _(u'Freedom Film Network')),
+            VocabItem(u'cij',
+                    _(u'Centre for Independent Journalism (CIJ)')),
+            VocabItem(u'ffn', _(u'Freedom Film Network')),
             VocabItem(u'justice_sisters', _(u'Justice for Sisters')),
             VocabItem(u'kryss', _(u'KRYSS Network')),
             VocabItem(u'mcchr', _(u'''
@@ -37,7 +38,7 @@ class Partners(object):
             (MCCHR)''')),
             VocabItem(u'geramm', _(u'Gerakan Media Merdeka')),
             VocabItem(u'sinarproject', _(u'Sinar Project')),
-            VocabItem(u'sis', _(u'Sisters in Islam)')),
+            VocabItem(u'sis', _(u'Sisters in Islam')),
             VocabItem(u'suaram', _(u'Suara Rakyat Malaysia (SUARAM)')),
         ]
 
