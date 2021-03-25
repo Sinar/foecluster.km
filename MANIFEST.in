@@ -1,0 +1,4 @@
+graft src/foecluster
+graft docs
+include *.rst
+global-exclude *.pyc
