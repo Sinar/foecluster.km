@@ -10,6 +10,16 @@
     <!-- -*- extra stuff goes here -*- -->
 
     <plone:behavior
+        name="foecluster.km.focus_area"
+        title="FocusArea"
+        description="Categories for FoE CLuster Focus Areas"
+        provides=".focus_area.IFocusArea"
+        factory=".focus_area.FocusArea"
+        marker=".focus_area.IFocusAreaMarker"
+        />
+
+
+    <plone:behavior
         name="foecluster.km.partners"
         title="Partners"
         description="FOE Cluster Partners Selection Field"
