@@ -6,7 +6,7 @@
 
     <utility
         component=".focus_areas.FocusAreasFactory"
-        name="foecluster.km.FocusAreas"
+        name="foecluster.focusareas"
     />
 
 

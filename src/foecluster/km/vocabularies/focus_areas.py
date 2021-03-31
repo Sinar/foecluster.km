@@ -21,11 +21,15 @@ class FocusAreas(object):
     """
 
     def __call__(self, context):
-        # Just an example list of content for our vocabulary,
-        # this can be any static or dynamic data, a catalog result for example.
+        # FOE Cluster Focus Areas
         items = [
-            VocabItem(u'sony-a7r-iii', _(u'Sony Aplha 7R III')),
-            VocabItem(u'canon-5d-iv', _(u'Canon 5D IV')),
+            VocabItem(u'strengthenmedia', _(u'Strengthening media')),
+            VocabItem(u'filmcensorship', _(u'Film censorship')),
+            VocabItem(u'roi', _(u'Right to information')),
+            VocabItem(u'strenghtenfoe',
+                      _(u'Strengthening freedom of expression ')),
+            VocabItem(u'internetcensorship',
+                      _(u'Internet censorship and digital rights')),
         ]
 
         # Fix context if you are using the vocabulary in DataGridField.

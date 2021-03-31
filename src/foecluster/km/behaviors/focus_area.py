@@ -2,6 +2,8 @@
 
 from foecluster.km import _
 from plone import schema
+from plone.app.z3cform.widget import SelectFieldWidget
+from plone.autoform import directives
 from plone.autoform.interfaces import IFormFieldProvider
 from plone.supermodel import model
 from Products.CMFPlone.utils import safe_hasattr
@@ -18,10 +20,14 @@ class IFocusArea(model.Schema):
     """
     """
 
-    project = schema.TextLine(
-        title=_(u'Project'),
-        description=_(u'Give in a project name'),
+    directives.widget(partners=SelectFieldWidget)
+    partners = schema.List(
+        title=u'Focus Areas',
+        description=u'FOE Cluster Focus Areas',
         required=False,
+        value_type=schema.Choice(
+            vocabulary='foecluster.focusareas',
+        ),
     )
 
 
@@ -32,11 +38,11 @@ class FocusArea(object):
         self.context = context
 
     @property
-    def project(self):
-        if safe_hasattr(self.context, 'project'):
-            return self.context.project
+    def focusareas(self):
+        if safe_hasattr(self.context, 'focusareas'):
+            return self.context.focusareas
         return None
 
-    @project.setter
-    def project(self, value):
-        self.context.project = value
+    @focusareas.setter
+    def focusareas(self, value):
+        self.context.focusareas = value

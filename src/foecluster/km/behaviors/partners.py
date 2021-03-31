@@ -22,13 +22,14 @@ class IPartners(model.Schema):
 
     directives.widget(partners=SelectFieldWidget)
     partners = schema.List(
-            title=u'Partners',
-            description=u'Partner(s) contributing to this resource',
-            required=False,
-            value_type=schema.Choice(
-                vocabulary='foecluster.partners',
-                ),
-            )
+        title=u'Partners',
+        description=u'Partner(s) contributing to this resource',
+        required=False,
+        value_type=schema.Choice(
+            vocabulary='foecluster.partners',
+        ),
+    )
+
 
 @implementer(IPartners)
 @adapter(IPartnersMarker)
