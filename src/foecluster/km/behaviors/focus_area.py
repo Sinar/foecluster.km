@@ -6,9 +6,7 @@ from plone.autoform.interfaces import IFormFieldProvider
 from plone.supermodel import model
 from Products.CMFPlone.utils import safe_hasattr
 from zope.component import adapter
-from zope.interface import Interface
-from zope.interface import implementer
-from zope.interface import provider
+from zope.interface import implementer, Interface, provider
 
 
 class IFocusAreaMarker(Interface):

@@ -5,6 +5,12 @@
     <!-- -*- extra stuff goes here -*- -->
 
     <utility
+        component=".focus_areas.FocusAreasFactory"
+        name="foecluster.km.FocusAreas"
+    />
+
+
+    <utility
         component=".partners.PartnersFactory"
         name="foecluster.partners"
     />

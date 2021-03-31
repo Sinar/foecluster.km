@@ -1,8 +1,7 @@
 # -*- coding: utf-8 -*-
 from foecluster.km.behaviors.focus_area import IFocusAreaMarker
 from foecluster.km.testing import FOECLUSTER_KM_INTEGRATION_TESTING  # noqa
-from plone.app.testing import setRoles
-from plone.app.testing import TEST_USER_ID
+from plone.app.testing import setRoles, TEST_USER_ID
 from plone.behavior.interfaces import IBehavior
 from zope.component import getUtility
 
