@@ -1,7 +1,19 @@
 <?xml version="1.0"?>
 <object name="portal_catalog">
     <index name="partners" meta_type="KeywordIndex">
-    <indexed_attr value="partners"/>
-  </index>
-  <column value="partners"/>
+        <indexed_attr value="partners"/>
+    </index>
+    <column value="partners"/>
+    <index name="partners" meta_type="KeywordIndex">
+        <indexed_attr value="partners"/>
+    </index>
+    <column value="partners"/>
+    <index name="focusareas" meta_type="KeywordIndex">
+        <indexed_attr value="focusareas"/>
+    </index>
+    <column value="focusareas"/>
+    <index name="focusareas" meta_type="KeywordIndex">
+        <indexed_attr value="focusareas"/>
+    </index>
+    <column value="focusareas"/>
 </object>

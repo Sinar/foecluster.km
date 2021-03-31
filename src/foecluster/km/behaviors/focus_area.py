@@ -20,8 +20,8 @@ class IFocusArea(model.Schema):
     """
     """
 
-    directives.widget(partners=SelectFieldWidget)
-    partners = schema.List(
+    directives.widget(focusareas=SelectFieldWidget)
+    focusareas = schema.List(
         title=u'Focus Areas',
         description=u'FOE Cluster Focus Areas',
         required=False,
