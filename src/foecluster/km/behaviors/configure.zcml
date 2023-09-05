@@ -18,15 +18,4 @@
         marker=".focus_area.IFocusAreaMarker"
         />
 
-
-    <plone:behavior
-        name="foecluster.km.partners"
-        title="Partners"
-        description="FOE Cluster Partners Selection Field"
-        provides=".partners.IPartners"
-        factory=".partners.Partners"
-        marker=".partners.IPartnersMarker"
-        />
-
-
 </configure>
