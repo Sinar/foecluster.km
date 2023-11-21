@@ -32,6 +32,8 @@ class FocusAreas(object):
                       _(u'Internet censorship and digital rights')),
             VocabItem(u'fotcr',
                       _(u'Freedom of thought, conscience, and religion')),
+            VocabItem(u'capacity',
+                      _(u'Internal Capacity Building')),
         ]
 
         # Fix context if you are using the vocabulary in DataGridField.
